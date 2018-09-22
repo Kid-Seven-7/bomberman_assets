@@ -7,6 +7,12 @@ BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
+#update
+printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
+echo "${BLUE}updating for assets...${NC}"
+printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
+git pull
+
 #unzip
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for backdrop...${NC}"
@@ -127,3 +133,9 @@ then
 else
 	echo "${GREEN}wallpapers found${NC}"
 fi
+
+#delete zips
+printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
+echo "${BLUE}deleting zipfiles...${NC}"
+printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
+find . -name "*.zip" -exec rm -rf {} \;

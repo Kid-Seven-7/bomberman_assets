@@ -1,0 +1,20 @@
+# Blender MTL File: 'holder.blend'
+# Material Count: 2
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd Abstract-Gold-Wallpaper.jpg
+
+newmtl None_Floral-Inspired-Golden-Textures-for-Free-Download-938x500.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd Floral-Inspired-Golden-Textures-for-Free-Download-938x500.jpg

@@ -284,12 +284,12 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for wallpaper.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -f wallpaper.zip ];
+if [ -f wallpapers.zip ];
 then
-	echo ${GREEN}wallpaper zip found${NC}
-	echo ${ORANGE}unzipping wallpaper...${NC}
-  unzip wallpaper.zip
-	rm -rf wallpaper.zip
+	echo ${GREEN}wallpapers zip found${NC}
+	echo ${ORANGE}unzipping wallpapers...${NC}
+  unzip wallpapers.zip
+	rm -rf wallpapers.zip
 else
-	echo ${RED}wallpaper zip not found${NC}
+	echo ${RED}wallpapers zip not found${NC}
 fi

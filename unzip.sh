@@ -18,7 +18,7 @@ NC='\033[0m'
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for backdrop.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d backdrop.zip ];
+if [ -f backdrop.zip ];
 then
 	echo ${GREEN}backdrop zip found${NC}
 	echo ${ORANGE}unzipping backdrop...${NC}
@@ -32,7 +32,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for background.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d background.zip ];
+if [ -f background.zip ];
 then
 	echo ${GREEN}background zip found${NC}
 	echo ${ORANGE}unzipping background...${NC}
@@ -46,7 +46,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for bomb.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d bomb.zip ];
+if [ -f bomb.zip ];
 then
 	echo ${GREEN}bomb zip found${NC}
 	echo ${ORANGE}unzipping bomb...${NC}
@@ -60,7 +60,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for clock.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d clock.zip ];
+if [ -f clock.zip ];
 then
 	echo ${GREEN}clock zip found${NC}
 	echo ${ORANGE}unzipping clock...${NC}
@@ -74,7 +74,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for enemies.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d enemies.zip ];
+if [ -f enemies.zip ];
 then
 	echo ${GREEN}enemies zip found${NC}
 	echo ${ORANGE}unzipping enemies...${NC}
@@ -88,7 +88,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for ground.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d ground.zip ];
+if [ -f ground.zip ];
 then
 	echo ${GREEN}ground zip found${NC}
 	echo ${ORANGE}unzipping ground...${NC}
@@ -102,7 +102,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for intro.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d intro.zip ];
+if [ -f intro.zip ];
 then
 	echo ${GREEN}intro zip found${NC}
 	echo ${ORANGE}unzipping intro...${NC}
@@ -116,7 +116,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for metal.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d metal.zip ];
+if [ -f metal.zip ];
 then
 	echo ${GREEN}metal zip found${NC}
 	echo ${ORANGE}unzipping metal...${NC}
@@ -130,7 +130,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for misc.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d misc.zip ];
+if [ -f misc.zip ];
 then
 	echo ${GREEN}misc zip found${NC}
 	echo ${ORANGE}unzipping misc...${NC}
@@ -144,7 +144,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for planets.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d planets.zip ];
+if [ -f planets.zip ];
 then
 	echo ${GREEN}planets zip found${NC}
 	echo ${ORANGE}unzipping planets...${NC}
@@ -158,7 +158,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for player.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d player.zip ];
+if [ -f player.zip ];
 then
 	echo ${GREEN}player zip found${NC}
 	echo ${ORANGE}unzipping player...${NC}
@@ -172,7 +172,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for ship.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d ship.zip ];
+if [ -f ship.zip ];
 then
 	echo ${GREEN}ship zip found${NC}
 	echo ${ORANGE}unzipping ship...${NC}
@@ -186,7 +186,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for sounds.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d sounds.zip ];
+if [ -f sounds.zip ];
 then
 	echo ${GREEN}sounds zip found${NC}
 	echo ${ORANGE}unzipping sounds...${NC}
@@ -200,7 +200,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for sounds2.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d sounds2.zip ];
+if [ -f sounds2.zip ];
 then
 	echo ${GREEN}sounds2 zip found${NC}
 	echo ${ORANGE}unzipping sounds2...${NC}
@@ -214,7 +214,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for stage.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d stage.zip ];
+if [ -f stage.zip ];
 then
 	echo ${GREEN}stage zip found${NC}
 	echo ${ORANGE}unzipping stage...${NC}
@@ -228,7 +228,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for test.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d test.zip ];
+if [ -f test.zip ];
 then
 	echo ${GREEN}test zip found${NC}
 	echo ${ORANGE}unzipping test...${NC}
@@ -242,7 +242,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for timeship.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d timeship.zip ];
+if [ -f timeship.zip ];
 then
 	echo ${GREEN}timeship zip found${NC}
 	echo ${ORANGE}unzipping timeship...${NC}
@@ -256,7 +256,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for universe.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d universe.zip ];
+if [ -f universe.zip ];
 then
 	echo ${GREEN}universe zip found${NC}
 	echo ${ORANGE}unzipping universe...${NC}
@@ -270,7 +270,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for wall.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d wall.zip ];
+if [ -f wall.zip ];
 then
 	echo ${GREEN}wall zip found${NC}
 	echo ${ORANGE}unzipping wall...${NC}
@@ -284,7 +284,7 @@ fi
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for wallpaper.zip...${NC}"
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -d wallpaper.zip ];
+if [ -f wallpaper.zip ];
 then
 	echo ${GREEN}wallpaper zip found${NC}
 	echo ${ORANGE}unzipping wallpaper...${NC}

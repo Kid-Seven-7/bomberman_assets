@@ -14,34 +14,6 @@ BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-#unzip backdrop
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-echo "${BLUE}checking for backdrop.zip...${NC}"
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -f backdrop.zip ];
-then
-	echo ${GREEN}backdrop zip found${NC}
-	echo ${ORANGE}unzipping backdrop...${NC}
-  unzip backdrop.zip
-	rm -rf backdrop.zip
-else
-	echo ${RED}backdrop zip not found${NC}
-fi
-
-#unzip background
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-echo "${BLUE}checking for background.zip...${NC}"
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -f background.zip ];
-then
-	echo ${GREEN}background zip found${NC}
-	echo ${ORANGE}unzipping background...${NC}
-  unzip background.zip
-	rm -rf background.zip
-else
-	echo ${RED}background zip not found${NC}
-fi
-
 #unzip bomb
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for bomb.zip...${NC}"
@@ -96,20 +68,6 @@ then
 	rm -rf ground.zip
 else
 	echo ${RED}ground zip not found${NC}
-fi
-
-#unzip intro
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-echo "${BLUE}checking for intro.zip...${NC}"
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -f intro.zip ];
-then
-	echo ${GREEN}intro zip found${NC}
-	echo ${ORANGE}unzipping intro...${NC}
-  unzip intro.zip
-	rm -rf intro.zip
-else
-	echo ${RED}intro zip not found${NC}
 fi
 
 #unzip metal
@@ -168,20 +126,6 @@ else
 	echo ${RED}player zip not found${NC}
 fi
 
-#unzip ship
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-echo "${BLUE}checking for ship.zip...${NC}"
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -f ship.zip ];
-then
-	echo ${GREEN}ship zip found${NC}
-	echo ${ORANGE}unzipping ship...${NC}
-  unzip ship.zip
-	rm -rf ship.zip
-else
-	echo ${RED}ship zip not found${NC}
-fi
-
 #unzip sounds
 printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
 echo "${BLUE}checking for sounds.zip...${NC}"
@@ -222,20 +166,6 @@ then
 	rm -rf stage.zip
 else
 	echo ${RED}stage zip not found${NC}
-fi
-
-#unzip test
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-echo "${BLUE}checking for test.zip...${NC}"
-printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
-if [ -f test.zip ];
-then
-	echo ${GREEN}test zip found${NC}
-	echo ${ORANGE}unzipping test...${NC}
-  unzip test.zip
-	rm -rf test.zip
-else
-	echo ${RED}test zip not found${NC}
 fi
 
 #unzip timeship

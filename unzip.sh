@@ -223,3 +223,17 @@ then
 else
 	echo ${RED}wallpapers zip not found${NC}
 fi
+
+#unzip Numbers
+printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
+echo "${BLUE}checking for Numbers.zip...${NC}"
+printf ${CYAN}'%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -${NC}
+if [ -f Numbers.zip ];
+then
+	echo ${GREEN}Numbers zip found${NC}
+	echo ${ORANGE}unzipping Numbers...${NC}
+  unzip Numbers.zip
+	rm -rf Numbers.zip
+else
+	echo ${RED}Numbers zip not found${NC}
+fi
